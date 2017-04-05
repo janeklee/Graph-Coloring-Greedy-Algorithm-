@@ -2,8 +2,8 @@ import csv, os
 import string
 string.ascii_lowercase
 
-
-os.chdir('C:\Users\Phillip\Box Sync\Boorman Lab\Experimental Tasks\Latent Cause Representation\Stims')
+#point to a relative path
+os.chdir(os.path.relpath('Stims', start='.')+'\\')
 
 
 files=csv.DictReader(open('Stims Similarities.csv','r+'))
