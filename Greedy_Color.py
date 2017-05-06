@@ -25,4 +25,23 @@ for i in files[0:5]:
             if l['STIMULUS NAME'] in i['SIMILAR IN COLOR'] or l['STIMULUS NAME'] in i['SIMILAR IN SHAPE']:
                 i['MatchingLetter'].append(l['STIMULUS NAME'])
             
-            
+# format dictionary => all stim names in one list called [stims]
+
+# create empty list called [finalStims] 
+
+# choose random row in dictionary
+# place stim name in [finalStims]
+# remove strings under [SIMILAR IN COLOR] and [SIMILAR IN SHAPE] from [stims]
+# remove those stims' rows from dictionary
+
+# for number of elements in [finalStims] < 4, do
+#    choose random row in dictionary 
+#    place stim name in [finalStims]
+#    compare strings under [SIMILAR IN COLOR] and [SIMILAR IN SHAPE] with [stims]
+#       if matches, then
+#          remove from [stims]
+#          remove those stims' rows from dictionary
+#       end if
+# end for
+
+# [final stims] should now be a list of 4 dissimilar fractals            
